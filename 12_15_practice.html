@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        float:left;
+        position: absolute;
+    }
+    button{
+        margin:20px;
+    }
+</style>
+<body>
+    <div id="new_div" onmouseover="aa()">
+        <button>按的到我嗎</button>
+    </div>
+</body>
+<script>
+    function aa(){
+        let window_width = window.innerWidth;
+        let width =  Math.floor(Math.random()*window_width);
+        let window_height = window.innerHeight;
+        let height = Math.floor(Math.random()*window_height);
+        document.getElementById("new_div").style.top = height + "px";
+        document.getElementById("new_div").style.left = width + "px";
+    }
+</script>
+</html>
