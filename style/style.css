@@ -257,6 +257,11 @@ footer .copyright{
   background: #E8DA87;
 }
 
+footer .bg_picture p{
+  color:#000;
+  margin-top: 15px;
+}
+
 footer .copyright p{
   color:#000;
 }
