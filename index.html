@@ -14,6 +14,10 @@
 
     <!-- CSS only -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Jquery lazyload -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 </head>
 <body>
     <div class="go_down">
@@ -67,46 +71,46 @@
 
     <div class="full-width content">
         <div class="fixed-width">
-            <div class="col-xl-12 col-12 vam">
+            <div class="col-xl-12 col-12 vam p-0">
                 <div class="col-lg-6 col-6">
                     <h1 class="title main_title">新</h1>
                     <h1 class="title second_title">港</h1>
                     <h1 class="title third_title">景    點</h1>
                 </div>
                 <div class="col-lg-6 col-6">
-                    <img class="main_logo" src="./img/logo.png" alt="">
+                    <img class="main_logo lazy" data-src="./img/logo.png" alt="">
                 </div>
-            </div>
-            <div class="col-lg-12 col-12 p-0">
-                <img class="temple_picture" src="./img/temple_picture.png" alt="">
+                <div class="col-xl-12 col-12 p-0">
+                    <img class="temple_picture lazy" data-src="./img/temple_picture.png" alt="">
+                </div>
             </div>
             <div class="col-lg-12 col-12 p-0 spot">
                 <div class="col-lg-4 col-4 p-0 position-relative">
                     <a href="culture02.html">
-                        <img src="./img/鐵道公園.jpg" alt="">
+                        <img class="lazy" data-src="./img/鐵道公園.jpg" alt="">
                     </a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">鐵道公園</h2>
                 </div>
                 <div class="col-lg-4 col-4 p-0 position-relative">
-                    <a href="temple01.html"><img src="./img/奉天宮.jpg" alt=""></a>
+                    <a href="temple01.html"><img class="lazy" data-src="./img/奉天宮.jpg" alt=""></a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">奉天宮</h2>
                 </div>
                 <div class="col-lg-4 col-4 p-0 position-relative">
-                    <a href="food01.html"><img src="./img/粉條冰.jpg" alt=""></a>
+                    <a href="food01.html"><img class="lazy" data-src="./img/粉條冰.jpg" alt=""></a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">粉條冰</h2>
                 </div>
             </div>
             <div class="col-lg-12 col-12 p-0 spot">
                 <div class="col-lg-4 col-4 p-0 position-relative">
-                    <a href="food02.html"><img src="./img/鴨肉羹.jpg" alt=""></a>
+                    <a href="food02.html"><img class="lazy" data-src="./img/鴨肉羹.jpg" alt=""></a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">鴨肉羹</h2>
                 </div>
                 <div class="col-lg-4 col-4 p-0 position-relative">
-                    <a href="temple02.html"><img src="./img/水仙宮.jpg" alt=""></a>
+                    <a href="temple02.html"><img class="lazy" data-src="./img/水仙宮.jpg" alt=""></a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">水仙宮</h2>
                 </div>
                 <div class="col-lg-4 col-4 p-0 position-relative">
-                    <a href="culture01.html"><img src="./img/cultural_museum.jpg" alt=""></a>
+                    <a href="culture01.html"><img class="lazy" data-src="./img/cultural_museum.jpg" alt=""></a>
                     <h2 class="position-absolute t-center text-light m-2 top-0">文化館</h2>
                 </div>
             </div>
@@ -115,15 +119,15 @@
     <footer class="full-width clearfix">
         <div class="col-lg-12 col-12 vam bg_picture">
             <div class="col-lg-4 col-4">
-                <a href="https://www.tbocc.gov.tw"><img src="https://www.tbocc.gov.tw/FileControl/FileImages/Bottom/Bottom_Logo.png" alt=""></a>
+                <a href="https://www.tbocc.gov.tw"><img class="lazy" data-src="https://www.tbocc.gov.tw/FileControl/FileImages/Bottom/Bottom_Logo.png" alt=""></a>
                 <p class="t-center mt-4 text-dark">嘉義縣政府觀光局</p>
             </div>
             <div class="col-lg-4 col-4">
-                <a href="https://www.taiwanbus.tw/"><img src="./img/chiayi_bus.png" alt=""></a>
+                <a href="https://www.taiwanbus.tw/"><img class="lazy" data-src="./img/chiayi_bus.png" alt=""></a>
                 <p class="t-center mt-4 text-dark">嘉義縣公車處</p>
             </div>
             <div class="col-lg-4 col-4">
-                <a href="https://singang.cyhg.gov.tw/"><img src="./img/鄉公所.png" alt=""></a>
+                <a href="https://singang.cyhg.gov.tw/"><img class="lazy" data-src="./img/鄉公所.png" alt=""></a>
                 <p class="t-center mt-4 text-dark">嘉義縣新港鄉公所</p>
             </div>
         </div>
@@ -134,20 +138,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
-
-    var pic_img = document.getElementsByClassName("pic_img");
-    for(var i=0;i<pic_img.length;i++){
-        pic_img[i].addEventListener("mouseover",MouseOver);
-        pic_img[i].addEventListener("mouseout",MouseOut);
-    }
-
-    function MouseOver(){
-        this.nextElementSibling.style.transform = "scaleX(1)";
-    }
-
-    function MouseOut(){
-        this.nextElementSibling.style.transform = "scaleX(0)";
-    }
     $(document).ready(function(){
         $("#travel_spot").click(function(){
             $("#dropdown").toggle();
@@ -162,6 +152,13 @@
             adaptiveHeight: true,
             autoplay:true
         });
+
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazyload",
+            threshold: 10,
+        });
+
+        $(".lazy").Lazy();
     });
 </script>
 <style>

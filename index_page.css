@@ -175,6 +175,8 @@ ul.dropdown-content li a{
 img.temple_picture{
     width:100%;
     opacity:.9;
+    /* margin-top: -35vh;
+    margin-bottom: 35vh; */
 }
 
 /* .content img{

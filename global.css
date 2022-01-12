@@ -39,6 +39,10 @@ a:hover{
     margin: auto;
 }
 
+.no-padding{
+
+}
+
 .vam{
     font-size: 0;
 }
@@ -128,4 +132,42 @@ a:hover{
     .col-lg-12{
         width: calc(100% / 12 * 12);
     }
+}
+
+/* footer */
+footer .bg_picture{
+    background-image:url("./img/footer.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #BFB146;
+}
+
+footer img{
+    display: block;
+    margin:auto;
+}
+
+footer img:nth-of-type(1){
+    width: 50%;
+}
+
+footer img:nth-of-type(2){
+    width: 100%;
+}
+
+footer img:nth-of-type(3){
+    width: 50%;
+}
+
+footer .copyright{
+    background: #E8DA87;
+}
+
+footer p{
+    color:#000;
+    margin-top: 20px;
+}
+
+footer .copyright p{
+    color:#000;
 }
