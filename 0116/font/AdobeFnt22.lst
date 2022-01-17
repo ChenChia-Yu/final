@@ -1,0 +1,61 @@
+%!Adobe-FontList 1.22
+%Locale:0x404
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GenYoGothicJP-N
+FamilyName:GenYoGothic JP
+StyleName:N
+FullName:GenYoGothic JP N
+MenuName:GenYoGothic JP N
+StyleBits:0
+FamilyNameNative:源様ゴシック
+StyleNameNative:N
+FullNameNative:源様ゴシック N
+WritingScript:Japanese
+OutlineFileName:D:\edc23\Desktop\110-1\網頁程式\期末網設\Font\GenYoGothicJP-N-02.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:7277476
+FileModTime:1639750286
+WeightClass:350
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,GenYoGothic JP N
+NameArray:0,Win,1,GenYoGothic JP N
+NameArray:0,Win,16,GenYoGothic JP
+NameArray:1,Win,1,源様ゴシック N
+NameArray:1,Win,16,源様ゴシック
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GenYoGothicTW-N
+FamilyName:GenYoGothic TW
+StyleName:N
+FullName:GenYoGothic TW N
+MenuName:源樣黑體 N
+StyleBits:0
+FamilyNameNative:源樣黑體
+StyleNameNative:N
+FullNameNative:源樣黑體 N
+WritingScript:TraditionalChinese
+OutlineFileName:D:\edc23\Desktop\110-1\網頁程式\期末網設\Font\GenYoGothicTW-N-01.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:9755916
+FileModTime:1639750285
+WeightClass:350
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,GenYoGothic TW N
+NameArray:2,Win,1,源樣黑體 N
+NameArray:2,Win,16,源樣黑體
+NameArray:0,Win,1,GenYoGothic TW N
+NameArray:0,Win,16,GenYoGothic TW
+%EndFont
+
